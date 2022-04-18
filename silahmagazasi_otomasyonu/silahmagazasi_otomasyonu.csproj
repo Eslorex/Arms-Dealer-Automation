@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AD034D4-94ED-4FB8-865D-BBB87E93097B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>silahmagazasi_otomasyonu</RootNamespace>
+    <AssemblyName>silahmagazasi_otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalisanEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanEkleSil.Designer.cs">
+      <DependentUpon>CalisanEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepoEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepoEkleSil.Designer.cs">
+      <DependentUpon>DepoEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duzenle.Designer.cs">
+      <DependentUpon>Duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EklentiEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EklentiEkleSil.Designer.cs">
+      <DependentUpon>EklentiEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkleSil.Designer.cs">
+      <DependentUpon>EkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaEkleSil.Designer.cs">
+      <DependentUpon>FaturaEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fiyatdegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiyatdegistir.Designer.cs">
+      <DependentUpon>fiyatdegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MermiEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MermiEkleSil.Designer.cs">
+      <DependentUpon>MermiEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SilahEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SilahEkleSil.Designer.cs">
+      <DependentUpon>SilahEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="silahmagazaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>silahmagazaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sorgula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sorgula.Designer.cs">
+      <DependentUpon>Sorgula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stoksayisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoksayisi.Designer.cs">
+      <DependentUpon>stoksayisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciEkleSil.Designer.cs">
+      <DependentUpon>TedarikciEkleSil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalisanEkleSil.resx">
+      <DependentUpon>CalisanEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepoEkleSil.resx">
+      <DependentUpon>DepoEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duzenle.resx">
+      <DependentUpon>Duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EklentiEkleSil.resx">
+      <DependentUpon>EklentiEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkleSil.resx">
+      <DependentUpon>EkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturaEkleSil.resx">
+      <DependentUpon>FaturaEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fiyatdegistir.resx">
+      <DependentUpon>fiyatdegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MermiEkleSil.resx">
+      <DependentUpon>MermiEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SilahEkleSil.resx">
+      <DependentUpon>SilahEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sorgula.resx">
+      <DependentUpon>Sorgula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stoksayisi.resx">
+      <DependentUpon>stoksayisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciEkleSil.resx">
+      <DependentUpon>TedarikciEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="silahmagazaDataSet.xsc">
+      <DependentUpon>silahmagazaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="silahmagazaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>silahmagazaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="silahmagazaDataSet.xss">
+      <DependentUpon>silahmagazaDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
