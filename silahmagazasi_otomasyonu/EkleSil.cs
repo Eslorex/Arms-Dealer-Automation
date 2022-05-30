@@ -89,5 +89,42 @@ namespace silahmagazasi_otomasyonu
             f1.ShowDialog();
             this.Close();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CalisanEkleSil f1 = new CalisanEkleSil();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MagazaEkleSil f1 = new MagazaEkleSil();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MusteriEkleSil f1 = new MusteriEkleSil();
+            f1.ShowDialog();
+            this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FaturaEkleSil f1 = new FaturaEkleSil();
+            f1.ShowDialog();
+            this.Close();
+        }
     }
 }

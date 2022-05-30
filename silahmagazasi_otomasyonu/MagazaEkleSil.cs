@@ -11,24 +11,22 @@ using System.Windows.Forms;
 
 namespace silahmagazasi_otomasyonu
 {
-    public partial class FaturaEkleSil : Form
+    public partial class MagazaEkleSil : Form
     {
         SqlConnection baglanti = new SqlConnection("Data Source=ESLOREX\\SQLEXPRESS;Initial Catalog=silahmagaza;Integrated Security=True");
         SqlCommand komut;
         SqlDataAdapter da;
-        public FaturaEkleSil()
+        public MagazaEkleSil()
         {
             InitializeComponent();
         }
 
         private void Ekleme_butonu_Click(object sender, EventArgs e)
         {
-            string ekle_sorgu = "INSERT INTO faturalar(musteriNo, fatura_tipi,siparisNo , fatura_tarihi) VALUES (@musteriNo, @fatura_tipi,@siparisNo, @fatura_tarihi,)";
+            string ekle_sorgu = "INSERT INTO magazalar(magazaAdres,magazaTelNo) VALUES (@magazaAdres,@magazaTelNo)";
             komut = new SqlCommand(ekle_sorgu, baglanti);
-            komut.Parameters.AddWithValue("@musteriNo", musterino_textbox.Text);
-            komut.Parameters.AddWithValue("@fatura_tipi", faturatipi_textbox.Text);
-            komut.Parameters.AddWithValue("@siparisNo", siparisno_textbox.Text);
-            komut.Parameters.AddWithValue("@fatura_tarihi", dateTimePicker1.Text);
+            komut.Parameters.AddWithValue("@magazaAdres", magazaadres_textbox.Text);
+            komut.Parameters.AddWithValue("@magazaTelNo", magazaTelNo_textbox.Text);
             baglanti.Open();
             komut.ExecuteNonQuery();
             baglanti.Close();
@@ -36,9 +34,9 @@ namespace silahmagazasi_otomasyonu
 
         private void sil_buton_Click(object sender, EventArgs e)
         {
-            string sil_sorgu = "DELETE FROM faturalar WHERE faturaNo = @faturaNo";
+            string sil_sorgu = "DELETE FROM magazalar WHERE magaza_id = @magaza_id";
             komut = new SqlCommand(sil_sorgu, baglanti);
-            komut.Parameters.AddWithValue("@faturaNo", Convert.ToInt32(faturaid_textbox.Text));
+            komut.Parameters.AddWithValue("@magaza_id", Convert.ToInt32(magazaid_textbox.Text));
             baglanti.Open();
             komut.ExecuteNonQuery();
             baglanti.Close();

@@ -120,6 +120,7 @@
             this.button7.TabIndex = 29;
             this.button7.Text = "Mağaza Ekle/Sil";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -129,6 +130,7 @@
             this.button8.TabIndex = 30;
             this.button8.Text = "Sipariş Ekle/Sil";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -138,6 +140,7 @@
             this.button9.TabIndex = 31;
             this.button9.Text = "Fatura Ekle/Sil";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -147,6 +150,7 @@
             this.button10.TabIndex = 32;
             this.button10.Text = "Çalışan Ekle/Sil";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -156,6 +160,7 @@
             this.button11.TabIndex = 33;
             this.button11.Text = "Müşteri Ekle/Sil";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // EkleSil
             // 
